@@ -1,4 +1,4 @@
-package com.ibik.academicservices.academicservices.Programs;
+package com.ibik.academicservices.academicservices.programs;
 
 import javax.transaction.Transactional;
 
@@ -15,16 +15,16 @@ public class ProgramsServices {
     public Programs save(Programs programs){
         return programsRepo.save(programs);
     }
+
     public Programs findOne(int id){
         return programsRepo.findById(id).get();
     }
+
     public Iterable<Programs> findAll(){
         return programsRepo.findAll();
     }
+
     public void removeOne(int id){
         programsRepo.deleteById(id);
     }
-
-    
 }
-

@@ -1,4 +1,4 @@
-package com.ibik.academicservices.academicservices.Programs;
+package com.ibik.academicservices.academicservices.programs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -28,8 +28,8 @@ public class ProgramsController {
     }
 
     @GetMapping("/{id}")
-    public Programs fetchProgramsById(@PathVariable("id") int id){
-        return programsServices.findOne(id);
+    public void fetchProgramsById(@PathVariable("id") int id){
+        programsServices.findOne(id);
     }
 
     @PutMapping

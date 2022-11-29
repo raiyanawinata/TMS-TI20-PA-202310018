@@ -1,10 +1,15 @@
 package com.ibik.academicservices.academicservices.dto;
+
 import java.util.ArrayList;
 import java.util.List;
-public class ResponseData <T>{
+
+
+
+public class ResponseData<T> {
     private boolean result;
     private List<String> message = new ArrayList<>();
-    private Iterable<T> data;
+    private Iterable <T> data;
+    
     public boolean isResult() {
         return result;
     }
@@ -23,7 +28,7 @@ public class ResponseData <T>{
     public void setData(Iterable<T> data) {
         this.data = data;
     }
-
+    
     
     
 }
